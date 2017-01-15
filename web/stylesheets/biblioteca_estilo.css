@@ -1,0 +1,92 @@
+/*Nessa primeira parte do código eu coloquei uma cor para ser usada de padrão no corpo da página 
+e defini uma sequência de possíveis familiias de fontes para a página*/
+body {
+color: #666666;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+}
+/*Aqui uso um recurso de posicionamento no header onde através do relative eu consigo 
+permitir setar um posicionamento, porém eu deixo para o navegador e a position como relative servira para trabalhar 
+com a absolute que será colocada no menu-opcoes*/
+
+header {
+position:relative;
+}
+
+/*A classe container controla a centralização pa página através da propriedade margin e defino através da largura*/
+.container {
+	margin:0 auto;
+	width:940px;
+}
+
+/*container para a parte central*/
+.containermain {
+	margin:0 auto;
+	width:600px;
+}
+
+/*Nessa área defino como será o menu de opções:
+1-tamanho da fonte
+2-cor para as tags âncoras
+3-espaçamentos das margens a esquerda
+3- e que o menu será redenrizado deitado através da propriedade display
+4-o posicionamento uqe será no topo a direita*/
+.menu-opcoes ul {
+	font-size:15px;
+}
+
+.menu-opcoes a {
+	color:#003366;
+}
+
+.menu-opcoes ul li {
+	margin-left:20px;
+	display:inline;
+}
+
+.menu-opcoes {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+/*área em que será trabalhado o footer*/
+
+footer {
+	clear:both;
+	padding:60px 0;
+}
+
+.social a {
+	width:35px;
+	height:35px;
+	display:block;
+	text-indent:-1150px;
+	background-repeat:no-repeat
+}
+
+.social a[href*="www.facebook.com"] {
+	background-image:url(../imagens/facebook.png);
+}
+
+.social a[href*="www.twitter.com"] {
+	background-image:url(../imagens/twitter.png);
+}
+
+.social a[href*="http://plus.google.com/"] {
+	background-image:url(../imagens/googleplus.png);
+}
+
+	footer .container {
+		position:relative;
+	}
+
+	.social  {
+		position:absolute;
+		bottom:12px;
+		right:0;
+	}
+
+	.social li {
+		float:left;
+		margin-left:25px;
+	}
